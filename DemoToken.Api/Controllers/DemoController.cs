@@ -64,7 +64,7 @@ namespace DemoToken.Api.Controllers
 
         [HttpGet]
         [Route("/test_policy")]
-        [Authorize(Policy = "DemoPolicy")]
+        [Authorize(Policy = "Demo_Policy")]
         public IActionResult TestPolicy()
         {
             return Ok(new

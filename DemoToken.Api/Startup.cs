@@ -55,7 +55,7 @@ namespace DemoToken.Api
             // https://docs.microsoft.com/en-us/aspnet/core/security/authorization/dependencyinjection?view=aspnetcore-3.1
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("DemoPolicy", p => p.Requirements.Add(new DemoRequirement()));
+                options.AddPolicy("Demo_Policy", p => p.Requirements.Add(new DemoRequirement()));
             });
             services.AddSingleton<IAuthorizationHandler, DemoPolicyHandler>();
 
